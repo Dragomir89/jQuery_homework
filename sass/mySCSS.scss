@@ -1,0 +1,82 @@
+$primary-color: #22bfee;
+$marginPaddingRadios: 5px;
+$submitBtnColor: #22C010;
+$errorColor: #e40033;
+
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+table{
+  border: 1px solid $primary-color;
+  margin: $marginPaddingRadios;
+  border-radius: $marginPaddingRadios;
+  display: inline-block;
+  float: left;
+
+  th{
+    background-color: $primary-color;
+    color: white;
+    padding: 14px;
+    width: 140px;
+  }
+  td{
+    color: $primary-color;
+    border-right: 1px solid $primary-color;
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+
+}
+
+
+
+button{
+  background-color: $submitBtnColor;
+  border: 1px solid silver;
+  color: white;
+  border-radius: $marginPaddingRadios;
+  width: 60px;
+  margin: $marginPaddingRadios;
+  font-size: 0.8em;
+}
+.deleteCar{
+  background-color: $errorColor;
+}
+
+
+input{
+  border:1px solid $primary-color;
+  border-radius: $marginPaddingRadios;
+}
+
+p{
+  font-size: 10px;
+  font-style: italic;
+  color: $errorColor;
+}
+
+
+
+
+
+.wrapperField{
+  padding: $primary-color;
+}
+label{
+  display: block;
+  color: $primary-color;
+}
+form{
+  padding: $marginPaddingRadios;
+  margin: $marginPaddingRadios;
+  display: inline-block;
+  border: 1px solid silver;
+  border-radius: $marginPaddingRadios;
+  float: left;
+}
+
+p{
+  color: $errorColor;
+}
