@@ -1,12 +1,18 @@
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-image: url("http://wallpapercave.com/wp/iKd4wfO.jpg"); }
+
+.wrapper {
+  width: 920px;
+  margin: 0 auto; }
 
 table {
   border: 1px solid #22bfee;
   margin: 5px;
   border-radius: 5px;
-  display: inline-block;
-  float: left; }
+  display: block; }
+  table tbody {
+    background-color: rgba(255, 255, 255, 0.6); }
   table th {
     background-color: #22bfee;
     color: white;
@@ -16,11 +22,11 @@ table {
     color: #22bfee;
     border-right: 1px solid #22bfee;
     text-align: center;
-    font-size: 0.8em; }
+    font-size: 1.2em; }
 
 button {
   background-color: #22C010;
-  border: 1px solid silver;
+  border: 1px solid #22bfee;
   color: white;
   border-radius: 5px;
   width: 60px;
@@ -32,7 +38,8 @@ button {
 
 input {
   border: 1px solid #22bfee;
-  border-radius: 5px; }
+  border-radius: 5px;
+  min-width: 30px; }
 
 p {
   font-size: 10px;
@@ -40,7 +47,7 @@ p {
   color: #e40033; }
 
 .wrapperField {
-  padding: #22bfee; }
+  display: inline-block; }
 
 label {
   display: block;
@@ -49,10 +56,10 @@ label {
 form {
   padding: 5px;
   margin: 5px;
-  display: inline-block;
-  border: 1px solid silver;
+  display: block;
+  border: 1px solid #22bfee;
   border-radius: 5px;
-  float: left; }
+  background-color: rgba(255, 255, 255, 0.6); }
 
 p {
   color: #e40033; }

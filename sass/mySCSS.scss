@@ -2,18 +2,26 @@ $primary-color: #22bfee;
 $marginPaddingRadios: 5px;
 $submitBtnColor: #22C010;
 $errorColor: #e40033;
-
+$whiteBG: rgba(255,255,255,0.6);
 body{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-image: url("http://wallpapercave.com/wp/iKd4wfO.jpg");
+}
+
+.wrapper{
+
+  width: 920px;
+  margin: 0 auto;
 }
 
 table{
   border: 1px solid $primary-color;
   margin: $marginPaddingRadios;
   border-radius: $marginPaddingRadios;
-  display: inline-block;
-  float: left;
-
+  display: block;
+  tbody{
+    background-color:$whiteBG
+  }
   th{
     background-color: $primary-color;
     color: white;
@@ -24,7 +32,7 @@ table{
     color: $primary-color;
     border-right: 1px solid $primary-color;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 1.2em;
   }
 
 
@@ -34,7 +42,7 @@ table{
 
 button{
   background-color: $submitBtnColor;
-  border: 1px solid silver;
+  border: 1px solid $primary-color;
   color: white;
   border-radius: $marginPaddingRadios;
   width: 60px;
@@ -49,6 +57,7 @@ button{
 input{
   border:1px solid $primary-color;
   border-radius: $marginPaddingRadios;
+  min-width: 30px;
 }
 
 p{
@@ -62,19 +71,20 @@ p{
 
 
 .wrapperField{
-  padding: $primary-color;
+  display: inline-block;
 }
 label{
   display: block;
   color: $primary-color;
 }
 form{
+
   padding: $marginPaddingRadios;
   margin: $marginPaddingRadios;
-  display: inline-block;
-  border: 1px solid silver;
+  display: block;
+  border: 1px solid $primary-color;
   border-radius: $marginPaddingRadios;
-  float: left;
+  background-color:$whiteBG;
 }
 
 p{
